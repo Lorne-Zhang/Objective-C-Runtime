@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  RuntimeExamples
+//
+//  Created by flying on 17/03/2018.
+//  Copyright © 2018 张飞龙. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//#define NSLog(FORMAT, ...) printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
+
+#endif /* PrefixHeader_pch */
+
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) do {       \
+printf("%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);  \
+} while (0)
+#else
+#define NSLog(...)
+#endif
+
+

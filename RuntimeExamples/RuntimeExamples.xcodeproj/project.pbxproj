@@ -15,6 +15,9 @@
 		DC90130420D7BDBE00A37AC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC90130320D7BDBE00A37AC8 /* main.m */; };
 		DC90130E20D7BDBE00A37AC8 /* RuntimeExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC90130D20D7BDBE00A37AC8 /* RuntimeExamplesTests.m */; };
 		DC90131920D7BDBE00A37AC8 /* RuntimeExamplesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC90131820D7BDBE00A37AC8 /* RuntimeExamplesUITests.m */; };
+		DC90132D20D7BF3800A37AC8 /* OtherObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC90132920D7BF3800A37AC8 /* OtherObject.m */; };
+		DC90132E20D7BF3800A37AC8 /* Diplomat.m in Sources */ = {isa = PBXBuildFile; fileRef = DC90132A20D7BF3800A37AC8 /* Diplomat.m */; };
+		DC90132F20D7BF3800A37AC8 /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = DC90132B20D7BF3800A37AC8 /* Warrior.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		DC90131420D7BDBE00A37AC8 /* RuntimeExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC90131820D7BDBE00A37AC8 /* RuntimeExamplesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeExamplesUITests.m; sourceTree = "<group>"; };
 		DC90131A20D7BDBE00A37AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC90132620D7BF3700A37AC8 /* OtherObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherObject.h; sourceTree = "<group>"; };
+		DC90132720D7BF3700A37AC8 /* Warrior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Warrior.h; sourceTree = "<group>"; };
+		DC90132820D7BF3800A37AC8 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DC90132920D7BF3800A37AC8 /* OtherObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherObject.m; sourceTree = "<group>"; };
+		DC90132A20D7BF3800A37AC8 /* Diplomat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diplomat.m; sourceTree = "<group>"; };
+		DC90132B20D7BF3800A37AC8 /* Warrior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Warrior.m; sourceTree = "<group>"; };
+		DC90132C20D7BF3800A37AC8 /* Diplomat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diplomat.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +120,13 @@
 				DC9012FF20D7BDBE00A37AC8 /* LaunchScreen.storyboard */,
 				DC90130220D7BDBE00A37AC8 /* Info.plist */,
 				DC90130320D7BDBE00A37AC8 /* main.m */,
+				DC90132C20D7BF3800A37AC8 /* Diplomat.h */,
+				DC90132A20D7BF3800A37AC8 /* Diplomat.m */,
+				DC90132620D7BF3700A37AC8 /* OtherObject.h */,
+				DC90132920D7BF3800A37AC8 /* OtherObject.m */,
+				DC90132820D7BF3800A37AC8 /* PrefixHeader.pch */,
+				DC90132720D7BF3700A37AC8 /* Warrior.h */,
+				DC90132B20D7BF3800A37AC8 /* Warrior.m */,
 			);
 			path = RuntimeExamples;
 			sourceTree = "<group>";
@@ -262,7 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC90132F20D7BF3800A37AC8 /* Warrior.m in Sources */,
 				DC9012F920D7BDBC00A37AC8 /* ViewController.m in Sources */,
+				DC90132E20D7BF3800A37AC8 /* Diplomat.m in Sources */,
+				DC90132D20D7BF3800A37AC8 /* OtherObject.m in Sources */,
 				DC90130420D7BDBE00A37AC8 /* main.m in Sources */,
 				DC9012F620D7BDBC00A37AC8 /* AppDelegate.m in Sources */,
 			);
@@ -435,6 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RuntimeExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RuntimeExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
